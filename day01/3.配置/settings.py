@@ -7,7 +7,6 @@ class BaseConfig(object):
 
 
 class TestConfig(BaseConfig):
-    DEBUG = True
     secret_key = "helloworld"
 
 class DevConfig(BaseConfig):
