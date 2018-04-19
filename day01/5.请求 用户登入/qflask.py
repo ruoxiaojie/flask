@@ -11,7 +11,7 @@ app.secret_key = "helloworld" #设置session
 
 #用户请求  ==》 app.before_request 我 ==》app.after_request ==》用户
 
-@app.before_request #请求前 无参数 无返回值  #最牛B的用户登入#
+@app.before_request #请求前 无参数 无返回值  #最牛B的用户登入##
 def bf():
     if request.path == "/login":
         return None
