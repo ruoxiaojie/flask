@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>欢迎登入</h1>
+<p>{{k1}}</p>
+<p>{{k2[0]}}</p>
+
+<ul>
+    {% for foo in k2 %}
+    <li>{{ foo }}</li>
+    {% endfor %}
+</ul>
+
+<p>{{ k3.kk2 }}</p>
+<p>{{ k3['kk2'] }}</p>
+<p>{{ k3.get('kk2') }}</p>
+
+<ul>
+    {% for foo in k3.keys() %}
+    <li>{{ foo }}</li>
+    {% endfor %}
+
+</ul>
+
+</body>
+</html>
