@@ -19,9 +19,6 @@ def login():
     session['user_info'] = 'xxxxx'
     return 'login.html'
 
-
-
-
 if __name__ == '__main__':
 
     app.run()
