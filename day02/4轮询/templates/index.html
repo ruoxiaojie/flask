@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>coolboy</title>
+</head>
+<body>
+
+    <ul>
+        {% for k,v in userlist.items() %}
+        <li id="use_{{k}}"> {{k}} {{v.name}} <span>{{v.count}}</span></li>
+        {% endfor %}
+    </ul>
+
+    <!--<script src="../static/jquery-3.1.1.js"></script >-->
+    <script src="{{ url_for('static',filename='jquery-3.1.1.js') }}"></script >
+    <script>
+        $(function () {
+            get_data()
+        })
+
+        function get_data() {
+            $.ajax({
+                url:'/query',
+                type:'GET'
+                success:function (arg) {
+                }
+            })
+
+        }
+    </script>
+
+
+    <!--<script>-->
+        <!--&lt;!&ndash;low b轮询 方式  2s刷新一次&ndash;&gt;-->
+        <!--function reload() {-->
+            <!--window.location.reload()-->
+        <!--}-->
+        <!--setInterval(reload,30000)-->
+    <!--</script>-->
+
+
+</body>
+</html>
