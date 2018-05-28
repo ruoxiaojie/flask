@@ -8,3 +8,8 @@ bc = Blueprint('bc',__name__)
 @bc.route('/index')
 def index():
     return 'index'
+
+
+
+flag=True
+
